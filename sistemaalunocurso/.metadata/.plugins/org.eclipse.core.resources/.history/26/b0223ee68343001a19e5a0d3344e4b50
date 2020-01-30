@@ -1,0 +1,5 @@
+package br.org.generation.sistemaalunoecurso.dao;
+
+public interface CursoRepo {
+
+}

@@ -1,0 +1,30 @@
+package br.org.generation.sistemaalunoecurso.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+
+@Entity					//curso é uma entidade
+@Table(name="tblcurso") //cujo nome da tabela foi definido
+public class Curso {
+	
+	@CodCurso          //CodCurso é a chave primaria
+	@GeneratedValue(strategy=GenerationType.IDENTITY) // gerado pelo banco
+	@Column(name="codCurso") // nome da coluna
+	private String codCurso;
+	
+	
+	@Column(name="nome", length=100) // aqui definimos nome e tamanho da coluna
+	private String nome;
+	
+	@Column(name="area", length=100)
+	private String area;
+	
+	@Column(name="modalidade", length=30)
+	private String modalidade;
+	
+	
+
+}
