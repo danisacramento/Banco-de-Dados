@@ -1,2 +1,2 @@
 # Banco de Dados
-Estudos envolvendo banco de dados (JPA)
+Estudos envolvendo banco de dados (JPA).
